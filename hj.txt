@@ -1,0 +1,8 @@
+
+        public int Id { get; set; }
+        public int ProdutoId { get; set;} // Chave estrangeira para Produto
+        public int Quantidade { get; set;}
+        public bool Ativo { get; set; }
+
+        //Propriedade de Navegação:
+        public virtual Produto Prod { get; set;}
